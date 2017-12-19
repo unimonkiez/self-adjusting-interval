@@ -1,0 +1,72 @@
+{
+  "name": "self-adjusting-interval",
+  "version": "0.0.0",
+  "description": "setInterval which works on browser, Node and React Native, like it should have",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx .",
+    "lint:error": "npm run lint -- --quiet",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:report": "npm run lint -- --format html -o ./report.html",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "build": "node ./bin/build.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unimonkiez/self-adjusting-interval.git"
+  },
+  "keywords": [
+    "setInterval",
+    "interval",
+    "self",
+    "adjusting",
+    "timers"
+  ],
+  "author": "unimonkiez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unimonkiez/self-adjusting-interval/issues"
+  },
+  "homepage": "https://github.com/unimonkiez/self-adjusting-interval#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-jest": "^22.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^22.0.1",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  },
+  "jest": {
+    "globals": {
+      "__DEV__": true
+    },
+    "transform": {
+      "^.+\\.jsx?$": "<rootDir>/bin/jest-jsx-transform.js"
+    },
+    "setupTestFrameworkScriptFile": "./bin/jest-test-setup.js",
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "^src/(.*)$": "<rootDir>/src/$1"
+    }
+  }
+}

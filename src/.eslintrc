@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "node": false
+  },
+  "extends": "../bin/webpack-eslint.js",
+  "overrides": [
+    {
+      "files": [
+        "*.test.js",
+        "*.spec.js",
+        "*.test.jsx",
+        "*.spec.jsx"
+      ],
+      "env": {
+        "jest": true,
+        "node": false,
+        "browser": false
+      },
+      "globals": {
+        "errorHandler": true
+      }
+    }
+  ]
+}
