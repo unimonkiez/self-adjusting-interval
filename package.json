@@ -1,6 +1,6 @@
 {
   "name": "self-adjusting-interval",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "setInterval which works on browser, Node and React Native, like it should have",
   "main": "lib/index.js",
   "scripts": {
