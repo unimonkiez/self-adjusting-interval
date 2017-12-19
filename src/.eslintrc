@@ -14,7 +14,7 @@
       ],
       "env": {
         "jest": true,
-        "node": false,
+        "node": true,
         "browser": false
       },
       "globals": {
