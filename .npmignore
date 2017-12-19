@@ -5,3 +5,4 @@ src/
 .eslintrc
 .gitignore
 yarn.lock
+.travis.yml

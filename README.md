@@ -1,4 +1,5 @@
 # Self adjusting interval
+[![npm version](https://badge.fury.io/js/self-adjusting-interval.svg)](https://badge.fury.io/js/self-adjusting-interval)[![Build Status](https://travis-ci.org/unimonkiez/self-adjusting-interval.svg?branch=master)](https://travis-ci.org/unimonkiez/self-adjusting-interval)
 
 ## Introdution
 javascript's `setInterval` and `setTimeout` are lacking when trying to build an accurate timer, furthermore, javascript's nature of being idle can throw off your timers even more!
