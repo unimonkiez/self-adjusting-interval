@@ -36,9 +36,12 @@ Also, javascript can be paused on slowed down to a hault (for example when your 
   ```js
   import setSelfAdjustingInterval from 'self-adjusting-interval';
 
-  setSelfAdjustingInterval(ticks => { // number, usually 1 
+  const stopInterval = setSelfAdjustingInterval(ticks => { // number, usually 1 
   // Your code...
   // for example, updating the UI clock with seconds
     addSecondsToClock(ticks);
   }, 1000); // ms
+  
+  ...
+  stopInterval(); // to stop the intervalif needed
 ```
